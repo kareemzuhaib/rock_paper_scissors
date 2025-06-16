@@ -10,6 +10,9 @@ A simple interactive Rock-Paper-Scissors game built using **HTML**, **CSS**, and
 - Reset functionality
 - Clean and responsive UI
 
+  ## 🖥️ Live Demo
+[View Calculator](https://kareemzuhaib.github.io/rock-paper-scissors/)
+
 ## 🛠 Tech Stack
 - HTML
 - CSS
