@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1 {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px #00000060;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.2s ease, background 0.2s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.score-card {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    margin: 3rem auto 0;
+    gap: 5rem;
+    background: rgba(255, 255, 255, 0.1);
+    /* semi-transparent white */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    /* glass effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#player,
+#bot {
+    font-size: 4rem;
+}
+
+.choose {
+    margin: 5rem;
+    text-shadow: 1px 1px 2px #00000060;
+}
+
+#msg,
+#reset {
+    display: inline-block;
+    width: 300px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#msg {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+#msg, .score-card p {
+    text-shadow: 1px 1px 2px #00000060;
+}
+
+#reset {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+#reset:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.2s ease, background 0.2s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#reset:active {
+    transform: scale(0.97);
+}
